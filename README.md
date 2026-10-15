@@ -82,7 +82,7 @@ flowchart TD
 > **核心**：围绕「45 家门店 AI 落地」场景，按真实故障逐步改造成 5 个公开项目 + 2 个桌面软件。每个产出解决一个具体故障。
 
 ```
-接入 AI（gateway）→ 用好 AI（prompt-craft）→ RAG 知识库（llm-wiki）→ 组织 AI 落地（本仓库）→ 交付业务结果（驾驶舱 / 指挥台）
+接入 AI（gateway）→ 用好 AI（prompt-craft）→ LLM×RAG 知识库（llm-wiki）→ 组织 AI 落地（本仓库）→ 交付业务结果（驾驶舱 / 指挥台）
 ```
 
 ### 本仓库在场景中的位置
@@ -104,7 +104,7 @@ flowchart TD
 - **[sensenova-gateway](https://github.com/Babymrbbbb/sensenova-gateway)** — 接入 AI：模型配额与稳定性底座
 - **[prompt-craft](https://github.com/Babymrbbbb/prompt-craft)** — 用好 AI：内容生产方法论
 - **[kb-cli](https://github.com/Babymrbbbb/kb-cli)** — 早期实现：分层 + 召回优先的验证原型
-- **[llm-wiki](https://github.com/Babymrbbbb/llm-wiki)** — RAG 知识库：知识库自动化维护
+- **[llm-wiki](https://github.com/Babymrbbbb/llm-wiki)** — LLM×RAG 知识库：知识库自动化维护
 
 ## License
 
