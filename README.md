@@ -77,6 +77,35 @@ flowchart TD
 - 对"AI 原生组织"感兴趣的管理者
 - 需要编排多个 AI 工具（编码 Agent / 内容 Agent / IDE）的人
 
+## 这是一套体系的一部分，不是孤立项目
+
+> **核心**：所有仓库围绕同一件事——让 45 家门店的真实业务被 AI 高效落地。每个仓库解决一个环节，合起来是一条完整生产线。
+
+```
+接入 AI（gateway）→ 用好 AI（prompt-craft）→ 管理/编译知识（kb-cli + llm-wiki）→ 组织 AI 落地（本仓库）→ 交付业务结果（驾驶舱 / 指挥台）
+```
+
+### 本仓库在体系中的位置
+
+**为什么改造**：AI 能力很多（网关能调模型、提示词能产内容、知识库能存知识），但**组织消化不了**——谁负责什么、任务怎么拆、怎么验收、多个 AI 工具怎么不互相覆盖。不改，AI 就是零散工具拼盘，不是生产线。
+
+**意义**：把「AI 工具」升级为「AI 组织」——智能路由、三层拆解、四闸校验、蓝图门禁、真调验收，让多个 AI 角色像团队一样协作，产出可验收的业务结果。
+
+**结合哪些部分**：
+- 调度 **sensenova-gateway** 的模型配额，支撑 44 个自动化任务
+- 编排 **prompt-craft** 的内容生产工作流
+- 驱动 **kb-cli / llm-wiki** 的知识库每日维护自动化
+- 产出结果落到 **驾驶舱 / 指挥台** 交付给业务方
+
+**单独用的价值**：即使不用整套体系，任何想「让多个 AI Agent 协作干活」的团队都能直接用这套组织机制——角色分工、任务拆解、质量门禁、防失控。
+
+### 相关项目
+
+- **[sensenova-gateway](https://github.com/Babymrbbbb/sensenova-gateway)** — 接入 AI：模型配额与稳定性底座
+- **[prompt-craft](https://github.com/Babymrbbbb/prompt-craft)** — 用好 AI：内容生产方法论
+- **[kb-cli](https://github.com/Babymrbbbb/kb-cli)** — 管理知识：检索底座
+- **[llm-wiki](https://github.com/Babymrbbbb/llm-wiki)** — 编译知识：知识库自动化维护
+
 ## License
 
 MIT
